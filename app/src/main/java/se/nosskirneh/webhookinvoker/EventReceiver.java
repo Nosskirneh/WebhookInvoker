@@ -32,7 +32,8 @@ public class EventReceiver extends BroadcastReceiver {
                 try {
                     conn.getInputStream().close();
                     if (conn.getResponseCode() != HttpURLConnection.HTTP_OK) {
-                        Toast.makeText(context,"Failed to send request", Toast.LENGTH_LONG).show();
+                        Toast.makeText(context,"Failed to send request",
+                                Toast.LENGTH_LONG).show();
                     }
                 } catch (Exception e) {
                     e.printStackTrace();
